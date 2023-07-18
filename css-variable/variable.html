@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --primary-color: steelblue;
+            --secondary-color: slateblue;
+            --font-size: 20px;
+        }
+        h1{
+            /* color: steelblue; */
+            color: var(--secondary-color);
+        }
+        h5{
+            border-color: steelblue;
+        }
+        .box{
+            border: 2px solid steelblue;
+        }
+        .box p{
+            color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>My custom properties</h1>
+    <h5>Also commonly known as CSS variables</h5>
+    <div class="box">
+        <h3>I am doing something</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus quae velit repellat. Culpa sequi, tempore, suscipit voluptate excepturi aperiam eius nobis esse quibusdam asperiores odio placeat dolorum unde eos!</p>
+    </div>
+</body>
+</html>
